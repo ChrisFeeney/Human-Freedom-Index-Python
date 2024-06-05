@@ -174,7 +174,7 @@ The country with the largest pf to ef difference is Argentina with a difference 
 
 - **Higher Economic Freedom:**
 
-The country with the largest ef to pf difference is Saudi Arabi with a difference of 3.62, followed by Bahrain with 3.39. This makes perfect sense for Saudi Arabia and other Middle East & North Afrcan countries(which take up half of the top 10) as they are know for being inceredibly oil rich but not for the freedoms they give to their citizens. Similarly, China being at number 10 is unsurprising as they have the 2nd largest economy in the world but are very vocal about the numerous authoritarian policies they have over the country.
+The country with the largest ef to pf difference is Saudi Arabi with a difference of 3.62, followed by Bahrain with 3.39. This makes perfect sense for Saudi Arabia and other Middle East & North Afrcan countries(which make up half of the top 10) as they are know for being incredibly oil rich but not for the freedoms they give to their citizens. Similarly, China being at number 10 is unsurprising as they have the 2nd largest economy in the world but are very vocal about the numerous authoritarian policies they have over the country.
 
 - **Scatter Insights:** 
 
