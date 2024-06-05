@@ -6,7 +6,6 @@
 
 #Import in necessary modules
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import seaborn as sns 
@@ -20,13 +19,8 @@ ef_df_f=pd.read_csv(r'C:\Users\chris\Desktop\Human Freedom Python\ef_df_f.csv')
 
 #/////////////////////////////////////////////////////////////////////////////
 #1.
-#Look at the highest scores recorded 
-df_2023_f.sort_values(by='hf_score',ascending=False).head(10)
-#The 10 higheset scores ever recorded all belong to Switzerland and New Zealand
-#The highest score is from Switzerland in 2000 at 9.32, followed by them in 2002(9.30),2003(9.28), which is tied with New Zealand in 2000
-
-#Look specifically at 2021
-df_2023_f[df_2023_f['year']==2021].sort_values(by='hf_score',ascending=False).head(10)
+#Look specifically at 2021 hf
+df_2023_f[df_2023_f['year']==2021].sort_values(by='hf_score',ascending=False).head(20)
 #In 2021 specifically, the highest hf_score is Switzerland(9.01), New Zealand(8.88), Denmark(8.83)
 #Intrestingly all of the top 10 are also in the top 10 of pf, but only the top 4 are in the top 10 of ef
 
@@ -37,6 +31,8 @@ hf_2021_h.plot(kind='barh')
 plt.title('Top 20 Highest Human Freedom by Country in 2021')
 plt.show()
 
+#Bottom 20 results
+df_2023_f[df_2023_f['year']==2021].sort_values(by='hf_score',ascending=True).head(20)
 #Bar chart for the 20 lowest hf countries
 hf_2021_l=hf_df[hf_df['year']==2021][['countries','hf_score']].sort_values(by='hf_score').head(20)
 hf_2021_l.set_index('countries',inplace=True)
@@ -46,6 +42,11 @@ plt.show()
 #The lowest is the Syrian Arab Republic, followed by the Yemen Republic, Sudan, Myanmar, and Iran
 #Almost all of the countries are either in Africa or the Middle East
 #China is in the bottom 20 which is interesting considering they are the 2nd largest economy
+
+#Look at the highest scores recorded 
+df_2023_f.sort_values(by='hf_score',ascending=False).head(10)
+#The 10 higheset scores ever recorded all belong to Switzerland and New Zealand
+#The highest score is from Switzerland in 2000 at 9.32, followed by them in 2002(9.30),2003(9.28), which is tied with New Zealand in 2000
 
 #Look at the difference year over year of hf scores
 #First invert the index so we can use diff then reinvert index
@@ -144,7 +145,7 @@ plt.title('Economic Freedom by Region Over Time')
 #The seemingly largest risers have been South Asia rising from ~6.0 ef to ~6.5, and Eastern Europe rising from ~6.5 ef to ~7.2(One point being 7th place to now ending in 4th)
 
 
-#Make same graphs for pf
+#pf
 #Look at the mean of each regions pf
 pf_df_f['region_pf_mean']=round(pf_df_f.groupby(['region','year'])['pf_score'].transform('mean'),2)
 region_pf_mean=pf_df_f.drop_duplicates(subset=['year','region'], keep='first')

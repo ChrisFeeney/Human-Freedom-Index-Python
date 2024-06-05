@@ -40,7 +40,7 @@ pf_df_f
 ef_df=df_2023.filter(regex='^ef_')
 ef_df=pd.concat([df_2023[add_columns], ef_df], axis=1)
 
-#Filtered down the ef_df to only enclude encompassing columns
+#Filtered down the ef_df to only include encompassing columns
 ef_df_f=ef_df[['year','iso','countries','region','ef_score','ef_rank','ef_government','ef_legal','ef_money','ef_trade','ef_regulation']]
 ef_df_f
 
