@@ -88,9 +88,11 @@ To find out which countries have the highest and lowest Human Freedom scores in 
 Breakdown of the results:
 
 - **Top 20:**
+- 
 The country with the highest hf score is Switzerland with 9.01, followed by New Zealand with 8.88. Out of the top 20 countries, 50% of them are from Western Europe. Looking closer at the top 10 we can see that they also all rank in top 10 of Personal Freedom, but only the top 4 are located in the top 10 of Economic Freedom.
 
 - **Bottom 20:**
+- 
 The country with the lowest Human Freedom score is the Syrian Arab Republic with a score of 2.96. There is a clear correlation between countries that reside in the regions of Middle East and Africa, and having a low Human Freedom score. An intersting point is that China comes in at the 17th lowest spot despite it having the second largest economy by GDP.
 
 ### Human Freedom All Time
@@ -109,11 +111,13 @@ hf_diff=hf_diff[hf_diff['hf_rot'].notna()]
 Breakdown of results:
 
 - **Upward Changes:**
+- 
 The country with the biggest change in hf was Tunisia in 2011, improving by 1.4 up to 6.43. The only other instance of an increase greater than 1 was with Gambia in 2017 with an increase of 1.09 up to 6.59. All but one of the 20 biggest jumps were with countries that started with a hf score of less than 7, which makes sense. As countries that are lower on the Human Freedom score have more room to grow upwards as opposed to those that are already high.
 
 ![Top_20_hf_diff](Assets/hf_diff_top.png)
 
 - **Downward Changes:**
+- 
 On the opposite side of the spectrum, Myanmar from 2021 has the biggest negative change, going down 1.55 to 3.88. A very interesting finding in this chart is that the United States has the 19th largest drop in hf in 2020, dropping by 0.47. Actually, six of the top 20 largest drops were recorded in 2020, with another one coming in 2021. This is most likely a tangible effect of the Covid-19 pandemic and the subsequent lockdowns on Human Freedom.
 
 ![Bottom_20_hf_diff](Assets/hf_diff_low.png)
