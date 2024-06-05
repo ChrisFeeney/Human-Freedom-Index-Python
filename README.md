@@ -154,7 +154,7 @@ The top two regions for personal freedom are unsurpisingly Western Europe at 8.9
 
 
 # 3. Countries Differences
-While most countries follow the trend of having a rouhgly 1:1 ratio of personal freedom to economic freedom, there are some that lean more heavily on one side than the other.
+While most countries follow the trend of having a roughly 1:1 ratio of personal freedom to economic freedom, there are some that lean more heavily on one side than the other.
 
 ![ef_vs_pf_scatter](Assets/efvspf.png)
 
