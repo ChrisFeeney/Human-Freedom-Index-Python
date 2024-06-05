@@ -2,7 +2,7 @@
 
 ## Introduction
 Investigate the Human Freedom Index 2023 data from the CATO Institute. All of the data cleaning, analysis, and plotting was done using Python.
-[Data Folder](/Human-Freedom-Index-Python/)
+[Data Cleaning](data_clean.py) [Data Analysis](eda.py)
 
 ## Background
 Using my background in econometrics, I wished to explore economic and human indicators from countries and regions around the world. This gave me a great opportunity to use and improve my skills of python.
