@@ -112,7 +112,7 @@ Breakdown of results:
 
 - **Upward Changes:**
 
-The country with the biggest change in hf was Tunisia in 2011, improving by 1.4 up to 6.43. The only other instance of an increase greater than 1 was with Gambia in 2017 with an increase of 1.09 up to 6.59. All but one of the 20 biggest jumps were with countries that started with a hf score of less than 7, which makes sense. As countries that are lower on the Human Freedom score have more room to grow upwards as opposed to those that are already high.
+The country with the biggest change in hf was Tunisia in 2011, improving by 1.4 up to 6.43. This is incredibly interesting as this was the year after the first Arab Spring started in Tunisia, indicating that there was a drastic increase in human freedom following this. The only other instance of an increase greater than 1 was with Gambia in 2017 with an increase of 1.09 up to 6.59. All but one of the 20 biggest jumps were with countries that started with a hf score of less than 7, which makes sense. As countries that are lower on the Human Freedom score have more room to grow upwards as opposed to those that are already high.
 
 ![Top_20_hf_diff](Assets/hf_diff_top.png)
 
