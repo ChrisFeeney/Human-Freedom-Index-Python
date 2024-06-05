@@ -28,7 +28,7 @@ Data is from [CATO Institiute](https://www.cato.org/human-freedom-index/2023)
 While the data from the CATO Institute is already cleaned and in a uniform format, there were still many missing values that would cause my analysis to be off. These missing values were located both on the indicators side as well as the scores side. Meaning that 350 rows of data spanning from 2000 to 2021 would be unhelpful.
 
 ### Cleaning Process
-The calculation of the Human Freedom score was the average of the Personal Freedom score and the Economic Freedom Score. The Personal Freedom and Economic Freedom score were calculated by taking the average of all the indicators in that field. 
+To calculate the Human Freedom score, take the average of the Personal Freedom score and the Economic Freedom Score. The Personal Freedom and Economic Freedom scores were calculated by taking the average of all the indicators in that field. 
 
 The only problem was that there were NULL values spread through all of the indicators for various countries over various years. The best method to fill in these NULL values would be to take the mean of that indicator for that particular country.
 
