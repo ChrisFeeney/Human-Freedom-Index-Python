@@ -101,7 +101,7 @@ If we look at the top 10 highest scoring countries from 2000-2021, the list is d
 ![Top10_hf_all](Assets/Top10_hf_all.png)
 
 ### Year Over Year
-As data is added every year from 2000 until 2021, it should be particularly insightful to see how much the hf scores change from year to year. To find the difference between years, pandas has diff(). However, this works the opposite way, so we must first invert the axis and invert it again after taking diff().
+As data has been added every year from 2000 until 2021, it should be particularly insightful to see how much the hf scores change from year to year. To find the difference between years, pandas has diff(). However, this takes the latest year and subtracts by the year before. This is opposite to what we want, so we must first invert the axis, take the difference, and then invert it again.
 ```python
 hf_diff=hf_df.iloc[::-1]
 hf_diff['hf_rot']=hf_diff.groupby('countries').hf_score.diff()
