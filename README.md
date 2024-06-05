@@ -136,7 +136,7 @@ plt.title('Human Freedom by Region Over Time')
 Breakdown of results:
 - **Human Freedom by Region:**
 
-The two regions that are clearly at the top are North America at 8.47 and Western Europe at 8.46. The bottom two are the Middle East & North Africa at 5.21 and Sub-Saharan Africa at 6.10. However, by looking at the graph it shows how large of a divide there is between the Middle East at the bottom and everybody else. All of the regions had sharp drops coming around 2020, likely coinciding with the pandemic. Interstingly, while other regions have either increased or held steady since 2010 the Middle East has been on a significant downward trend. The first arab spring that swept over the arab world started in late 2010, so it is possible that this is correlated.
+The two regions that are clearly at the top are North America at 8.47 and Western Europe at 8.46. The bottom two are the Middle East & North Africa at 5.21 and Sub-Saharan Africa at 6.10. However, by looking at the graph it shows how large of a divide there is between the Middle East at the bottom and everybody else. All of the regions had sharp drops coming around 2020, likely coinciding with the pandemic. Interstingly, while other regions have either increased or held steady since 2010 the Middle East has been on a significant downward trend. The first Arab Spring that swept over the arab world started in late 2010, so it is possible that this is correlated but hard to say since we saw earlier that Tunisia had positive movement following that.
 
 ![hf_region_time](Assets/Hf_region_time.png)
 
