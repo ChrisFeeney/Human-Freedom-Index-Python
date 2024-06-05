@@ -81,9 +81,9 @@ Here is my approach to investigating the questions I set out answer:
 ### Human Freedom 2021
 To find out which countries have the highest and lowest Human Freedom scores in 2021(the latest year in the dataset) I created bar charts to display the results
 
-![Top_20_hf_2021](Human-Freedom-Index-Python\Assets\Top20hf_2021.png)
+![Top_20_hf_2021](Assets/Top20hf_2021.png)
 
-![Bottom_20_hf-2021](Human-Freedom-Index-Python\Assets\Bottom20hf_2021.png)
+![Bottom_20_hf-2021](Assets/Bottom20hf_2021.png)
 
 Breakdown of the results:
 
@@ -96,7 +96,7 @@ The country with the lowest Human Freedom score is the Syrian Arab Republic with
 ### Human Freedom All Time
 If we look at the top 10 highest scoring countries from 2000-2021, the list is dominated by Switzerland and New Zealand. The highest score is Switzerland from 2000 at 9.32.
 
-![Top10_hf_all](Human-Freedom-Index-Python\Assets\Top10_hf_all.png)
+![Top10_hf_all](Assets/Top10_hf_all.png)
 
 ### Year Over Year
 As data is added every year from 2000 until 2021, it should be particularly insightful to see how much the hf scores change from year to year. To find the difference between years, pandas has diff(). However, this works the opposite way, so we must first invert the axis and invert it again after taking diff().
@@ -111,12 +111,12 @@ Breakdown of results:
 - **Upward Changes:**
 The country with the biggest change in hf was Tunisia in 2011, improving by 1.4 up to 6.43. The only other instance of an increase greater than 1 was with Gambia in 2017 with an increase of 1.09 up to 6.59. All but one of the 20 biggest jumps were with countries that started with a hf score of less than 7, which makes sense. As countries that are lower on the Human Freedom score have more room to grow upwards as opposed to those that are already high.
 
-![Top_20_hf_diff](Human-Freedom-Index-Python\Assets\hf_diff_top.png)
+![Top_20_hf_diff](Assets/hf_diff_top.png)
 
 - **Downward Changes:**
 On the opposite side of the spectrum, Myanmar from 2021 has the biggest negative change, going down 1.55 to 3.88. A very interesting finding in this chart is that the United States has the 19th largest drop in hf in 2020, dropping by 0.47. Actually, six of the top 20 largest drops were recorded in 2020, with another one coming in 2021. This is most likely a tangible effect of the Covid-19 pandemic and the subsequent lockdowns on Human Freedom.
 
-![Bottom_20_hf_diff](Human-Freedom-Index-Python\Assets\hf_diff_low.png)
+![Bottom_20_hf_diff](Assets/hf_diff_low.png)
 
 ## 2. Regions
 To look at the mean score for each region, I created new dataframes that grouped by the region and year then got transformed by the mean. Now that we have those dataframes, I created a for loop that would plot each unique region by their mean score and label them correctly.
@@ -134,25 +134,25 @@ Breakdown of results:
 
 The two regions that are clearly at the top are North America at 8.47 and Western Europe at 8.46. The bottom two are the Middle East & North Africa at 5.21 and Sub-Saharan Africa at 6.10. However, by looking at the graph it shows how large of a divide there is between the Middle East at the bottom and everybody else. All of the regions had sharp drops coming around 2020, likely coinciding with the pandemic. Interstingly, while other regions have either increased or held steady since 2010 the Middle East has been on a significant downward trend. The first arab spring that swept over the arab world started in late 2010, so it is possible that this is correlated.
 
-![hf_region_time](Human-Freedom-Index-Python\Assets\Hf_region_time.png)
+![hf_region_time](Assets/Hf_region_time.png)
 
 - **Economic Freedom by Region:**
 
 Once again the two highest scoring regions are North America and Western Europe at 8.06 and 7.77 respectively. Similarly, Sub-Saharan Africa at 5.94 and the Middle East & North Africa at 5.95 are at the bottom. Using the line charts ability to see fluctuations over time, we see that the top three regions of North America, Western Europe, and East Asia have held their rankings from 2000 to 2021 without changing. However, every other region has had some sort of ranking change, with the biggest riser being Eastern Europe going from 7th and ending at 4th, a rise of ~0.7 score. Another benefit of this line chart is seeing how each regions economic freedom was impacted by large economic events. In 2007-2008 the great recession affected North America and Western Europe immensely as we can see in the chart, but surprisingly there were many regions that had accelerated growth during this time such as Eastern Europe.
 
-![ef_region_time](Human-Freedom-Index-Python\Assets\ef_region_time.png)
+![ef_region_time](Assets/ef_region_time.png)
 
 - **Personal Freedom by Region:**
 
 The top two regions for personal freedom are unsurpisingly Western Europe at 8.95 and North America at 8.76. Oceania comes in third at 8.32 when it was just middle of the pack for economic freedom. Another common ranking is the Middle East & North Africa coming in last at 4.67, but Sub-Saharan Africa that was last or second to last in all the other scores comes in third to last here with 6.20. The line plot shows us three distinct groupings of regions. The top group includes North America, Western Europe, Oceania, Eastern Europe, East Asia, and Latin America & The Caribbean. The middle group includes the Caucaus & Central Asia, Sub-Saharan Africa, and South Asia. At the very bottom far from any other region is the Middle East & North Africa, whose steep downward trend following 2010 has been an anomoly. All regions did see a drop in personal freedom following 2020, with the highest ranking countries seeing the largest declines. 
 
-![pf_region_time](Human-Freedom-Index-Python\Assets\pf_region_time.png)
+![pf_region_time](Assets/pf_region_time.png)
 
 
 # 3. Countries Differences
 While most countries follow the trend of having a rouhgly 1:1 ratio of personal freedom to economic freedom, there are some that lean more heavily on one side than the other.
 
-![ef_vs_pf_scatter](Human-Freedom-Index-Python\Assets\efvspf.png)
+![ef_vs_pf_scatter](Assets/efvspf.png)
 
 To calculate this, I created a dataframe that found the difference between the pf score and the ef score for each country in 2021. Having a positive difference indicates a higher personal freedom then economic freedom, and a negative difference indicates a higher economic freedom then personal freedom.
 ```python
@@ -160,7 +160,7 @@ ep_diff=df_2021
 ep_diff['pf_ef_diff']=ep_diff['pf_score']-ep_diff['ef_score']
 ```
 
-![hf_ef_diff_scatter](Human-Freedom-Index-Python\Assets\hf_df_diff_scatter.png)
+![hf_ef_diff_scatter](Assets/hf_df_diff_scatter.png)
 
 Breakdown of the results:
 
